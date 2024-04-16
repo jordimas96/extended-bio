@@ -11,7 +11,7 @@
     <style>
         body {
             color-scheme: dark;
-            background-color: black;
+            background-color: hsl(258 100% 10%);
             color: white;
             font-family: Arial, Helvetica, sans-serif;
 
@@ -41,7 +41,7 @@
         }
         .web {
             /* background-color: #5c00b8; */
-            /* background: url("fons-boto.png"); */
+            /* background: linear-gradient(45deg, #343434, #121212); */
             background: linear-gradient(25deg,
                 hsla(225, 100%, 25%, 1),
                 hsla(283, 100%, 25%, 1));
@@ -53,15 +53,29 @@
             font-style: italic;
             color: #ccc;
         }
+        .boing {
+            cursor: pointer;
+
+            transform-origin: center;
+            transform: scale(1);
+            transition: transform 0.1s, border-radius 0.3s;
+
+            &:active {
+                transform: scale(0.9);
+            }
+            &:disabled {
+                pointer-events: none;
+            }
+        }
     </style>
 </head>
 <body>
 
 
     <div>
-        <a class="boto apps" href="https://jordimas96.github.io/r/r?id=play-store-apps">My apps</a>
-        <a class="boto music" href="https://jordimas96.github.io/r/r?id=spotify-a-cantar-chicos">My music</a>
-        <a class="boto web" href="https://jordimas96.github.io">My web</a>
+        <a class="boto boing apps" href="https://jordimas96.github.io/r/r?id=play-store-apps">My apps</a>
+        <a class="boto boing music" href="https://jordimas96.github.io/r/r?id=spotify-a-cantar-chicos">My music</a>
+        <a class="boto boing web" href="https://jordimas96.github.io">My web</a>
 
         <p>Jordi Mas</p>
     </div>
