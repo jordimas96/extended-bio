@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Jordi Mas Extended Insta Bio</title>
+    <title>Jordi Mas Extended Bio</title>
     <meta name="author" content="Jordi Mas Parramon">
     
     <meta charset="UTF-8">
@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             color-scheme: dark;
             background-color: hsl(258 100% 10%);
@@ -26,20 +29,36 @@
             font-size: 3rem;
             display: block;
             text-align: center;
+            color: white;
             text-decoration: none;
             padding: 1rem 2rem;
             margin: 2rem;
             border-radius: 1.5rem;
         }
-        .apps {
-            background-color: #4285f4;
+        .github {
+            background-color: #24282e;
             color: white;
+        }
+        .bunquer {
+            background-color: #661a15;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        .bunquer img {
+            height: 87px;
+            padding: 0.5rem 0;
+        }
+        .apps {
+            /* background-color: #4285f4; */
+            background-color: #3ddb86;
+            color: black;
         }
         .music {
             background-color: #1ccc5b;
             color: white;
         }
-        .web {
+        .portfolio {
             /* background-color: #5c00b8; */
             /* background: linear-gradient(45deg, #343434, #121212); */
             background: linear-gradient(25deg,
@@ -48,10 +67,11 @@
             color: white;
         }
         p {
+            font-size: 1.2rem;
             text-align: center;
             padding-top: 10rem;
             font-style: italic;
-            color: #ccc;
+            color: hsl(258 100% 85%);
         }
         .boing {
             cursor: pointer;
@@ -73,9 +93,13 @@
 
 
     <div>
+        <a class="boto boing github" href="https://github.com/jordimas96">GitHub</a>
+        <a class="boto boing bunquer" href="https://jordimas96.github.io/bunquer-descarregador/">
+            <img src="https://jordimas96.github.io/bunquer-descarregador/assets/logo-bunquer-transparent.png">
+        </a>
         <a class="boto boing apps" href="https://jordimas96.github.io/r/play-store">My apps</a>
         <a class="boto boing music" href="https://jordimas96.github.io/r/a-cantar-chicos">My music</a>
-        <a class="boto boing web" href="https://jordimas96.github.io">My web</a>
+        <!-- <a class="boto boing portfolio" href="https://jordimas96.github.io">Portfolio</a> -->
 
         <p>Jordi Mas</p>
     </div>
