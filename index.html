@@ -14,16 +14,22 @@
         }
         body {
             color-scheme: dark;
-            background-color: hsl(258 100% 10%);
+            background-color: #001f33;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
 
             margin: 0;
         }
-        div {
+        .botons {
             width: fit-content;
             margin: auto;
-            margin-top: 10rem;
+            padding-top: 10rem;
+
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            height: 100vh;
         }
         .boto {
             font-size: 3rem;
@@ -32,12 +38,21 @@
             color: white;
             text-decoration: none;
             padding: 1rem 2rem;
-            margin: 2rem;
             border-radius: 1.5rem;
         }
         .github {
             background-color: #24282e;
             color: white;
+        }
+        .municipis-visitats {
+            background-color: #00102e;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+        .municipis-visitats img {
+            height: 87px;
+            padding: 0.5rem 0;
         }
         .bunquer {
             background-color: #661a15;
@@ -69,7 +84,6 @@
         p {
             font-size: 1.2rem;
             text-align: center;
-            padding-top: 10rem;
             font-style: italic;
             color: hsl(258 100% 85%);
         }
@@ -92,14 +106,19 @@
 <body>
 
 
-    <div>
+    <div class="botons">
         <a class="boto boing github" href="https://github.com/jordimas96">GitHub</a>
-        <a class="boto boing bunquer" href="https://jordimas96.github.io/bunquer-descarregador/">
-            <img src="https://jordimas96.github.io/bunquer-descarregador/assets/logo-bunquer-transparent.png">
+        <a class="boto boing municipis-visitats" href="https://municipis-visitats-paisos-catalans.github.io/">
+            <img src="https://municipis-visitats-paisos-catalans.github.io/assets/icona-sense-fons.png">
+        </a>
+        <a class="boto boing bunquer" href="https://bunquer-descarregador.github.io/">
+            <img src="https://bunquer-descarregador.github.io/assets/logo-bunquer-transparent.png">
         </a>
         <a class="boto boing apps" href="https://jordimas96.github.io/r/play-store">My apps</a>
         <a class="boto boing music" href="https://jordimas96.github.io/r/a-cantar-chicos">My music</a>
         <!-- <a class="boto boing portfolio" href="https://jordimas96.github.io">Portfolio</a> -->
+
+        <div style="margin-top: auto;"></div>
 
         <p>Jordi Mas</p>
     </div>
